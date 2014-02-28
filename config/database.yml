@@ -6,7 +6,7 @@
 development:
   adapter: mysql2
   username: root
-  password: "1234"
+  password: "1452"
   database: dummy_development
   pool: 5
   timeout: 5000
