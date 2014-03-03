@@ -20,6 +20,7 @@ group :assets do
 end
 
 gem 'sidekiq'
+gem "bunny", "~> 1.1.0"
 
 gem 'jquery-rails'
 

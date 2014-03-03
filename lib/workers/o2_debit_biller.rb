@@ -1,6 +1,9 @@
+require './lib/queue_wrapper_sidekiq'
+require './lib/queue_wrapper_bunny'
+
 class O2DebitBiller
-  include QueueWrapper
-  queue  'debit:02'
+  include QueueWrapperBunny
+  queue  'debit.o2'
   priority :high
 
    def bill(result_will_be)
@@ -23,6 +26,8 @@ class O2DebitBiller
       end
    end
 
-   def something
+   def foo(arg)
+    puts "doing stuff with this #{arg}"
    end
+
 end

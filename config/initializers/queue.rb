@@ -1,4 +1,4 @@
-require './lib/queue_wrapper'
-QueueWrapper.configure do |config|
-  config.worker :rabbitmq
-end
+# require './lib/queue_wrapper'
+# QueueWrapper.configure do |config|
+#   config.worker :rabbitmq
+# end
